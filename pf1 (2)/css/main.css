@@ -1,0 +1,334 @@
+main{
+  
+  height: auto;
+}
+#summary {
+
+  background-color: #eee;
+  height: 100vh;
+  background-image: url(../img/bg_main_2.jpg);
+}
+#summary div.wrap{
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  color: white;
+}
+#summary h2.hide {
+
+  display: none;
+}
+#summary p.p1 {
+
+  line-height: 1.5;
+  font-weight: 400;
+}
+#summary ul {
+
+  position: absolute;
+  bottom: 50px;
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+#summary ul li {
+
+}
+#summary ul li h3 {
+
+
+  font-size: 18px;
+}
+#summary ul li p {
+
+}
+#summary ul li p.p2 {
+
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+#summary ul li p.p3 {
+
+}
+/* 비전 */
+#vision {
+
+  height: auto;
+}
+#vision div.wrap {
+
+  width: 1440px;
+  padding-top: 70px;
+}
+#vision div.wrap h2 {
+
+}
+#vision div.wrap h3 {
+
+  text-align: center;
+  margin-bottom: 70px;
+}
+#vision div.wrap ul {
+
+}
+#vision div.wrap ul li {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-bottom: 60px;
+}
+#vision div.wrap ul li::before{
+  content: "";
+  display: inline-block;
+  width: 90%;
+  height: 440px;
+  background-image: url(../img/bg_story_1.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  border-radius: 10px;
+}
+#vision div.wrap ul li.a2::before{
+  
+  background-image: url(../img/bg_story_2.jpg);
+}
+#vision div.wrap ul li.a3::before{
+  
+  background-image: url(../img/bg_story_3.jpg);
+}
+#vision div.wrap ul li.a4::before{
+  
+  background-image: url(../img/bg_story_4.jpg);
+}
+#vision div.wrap ul li h4 {
+
+  grid-column: 2;
+  grid-row: 2;
+}
+#vision div.wrap ul li h4 span.h3T {
+
+  color: #ffc72c;
+  font-weight: bold;
+}
+#vision div.wrap ul li p {
+
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  color: #777;
+}
+#vision div.wrap ul li:nth-child(even)::before{
+  
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  margin-left: 10%;
+}
+#vision div.wrap ul li:nth-child(even) h4{
+  
+  grid-column: 1;
+  grid-row: 2;
+  text-align: end;
+}
+#vision div.wrap ul li:nth-child(even) p{
+  
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: end;
+  /*! margin-right: 10%; */
+}
+/* 카테고리 */
+#category {
+
+  height: 721px;
+}
+#category div.wrap {
+
+}
+#category div.wrap h2.hide {
+
+}
+#category div.wrap h3.h4T {
+
+  text-align: center;
+  padding-top: 20px;
+  height: 122px;
+  font-weight: bold;
+}
+#category div.wrap ul {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+#category div.wrap ul li.h5T {
+
+  width: calc(100% / 8);
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_1.jpg);
+  height: 500px;
+  background-position: center;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-direction: column;
+  transition: 1s;
+  position: relative;
+}
+#category div.wrap ul li.h5T:hover{
+  
+  width: calc(200% / 8);
+}
+#category div.wrap ul li.h5T h4{
+  
+  font-weight: bolder;
+  transition: 1s;
+}
+#category div.wrap ul li.h5T:hover h4{
+  
+  transform: translateY(-15px);
+}
+#category div.wrap ul li.h5T p{
+  
+  text-align: center;
+  position: absolute;
+  top: 57%;
+  width: 135%;
+  line-height: 1.6;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  opacity: 0;
+}
+#category div.wrap ul li.h5T:hover p{
+  
+  opacity: 1;
+  display: initial;
+  transform: translateY(15px);
+}
+#category div.wrap ul li.h5T:nth-child(2) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_2.jpg);
+  background-position: center;
+}
+#category div.wrap ul li.h5T:nth-child(3) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_4.jpg);
+  background-position: inherit;
+}
+#category div.wrap ul li.h5T:nth-child(4) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_5.jpg);
+}
+#category div.wrap ul li.h5T:nth-child(5) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_6.jpg);
+}
+#category div.wrap ul li.h5T:nth-child(6) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_3.jpg);
+  background-position: center;
+}
+#category div.wrap ul li.h5T:nth-child(7) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_7.jpg);
+}
+#category div.wrap ul li.h5T:nth-child(8) {
+
+  /*! width: 171px; */
+  background-image: url(https://company.ybtour.co.kr/images/bg/bg_category_8.jpg);
+  background-position: right;
+}
+#news {
+
+  display: flex;
+  align-items: center;
+  /*! color: black; */
+}
+#news div.wrap {
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 20px;
+}
+#news div.wrap h2.hide {
+
+}
+#news div.wrap h3.h4T {
+
+  grid-column: 1;
+  grid-row: 1;
+  font-weight: bold;
+}
+#news div.wrap a.smT {
+
+  grid-column: 1;
+  grid-row: 2;
+  color: black;
+  transition: 0.5s;
+  height: 21px;
+  width: 174px;
+}
+#news div.wrap a.smT::after{
+  
+  background-image: url(../img/right.svg);
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  vertical-align: -13px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+#news div.wrap a.smT:hover::after{
+  
+  transform: translateX(10px);
+}
+#news div.wrap a.smT:hover{
+  
+  color: blue;
+}
+#news div.wrap ul {
+
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-top: 2px solid #333;
+}
+#news div.wrap ul li {
+
+  border-bottom: 1px solid gainsboro;
+  transition: 0.5s;
+}
+#news div.wrap ul li:hover{
+  
+  background-color: #eee;
+}
+#news div.wrap ul li a.h6T {
+
+  line-height: 3;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  align-items: center;
+  padding: 28px 30px 28px 0;
+}
+#news div.wrap ul li a.h6T time.smT {
+
+  color: #555;
+}
